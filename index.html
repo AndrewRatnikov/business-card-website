@@ -67,7 +67,9 @@
           Чим я можу тобі допомогти
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 max-w-screen-xl mx-auto"
+        >
           <div
             class="flex flex-col items-center gap-3 bg-white max-w-[300px] mx-auto p-4 rounded-lg"
           >
@@ -263,16 +265,20 @@
 
       <!-- <section id="testimonials"></section> -->
 
-      <section id="prices">
-        <h2>Послуги та вартість</h2>
+      <section id="prices" class="p-2 max-w-screen-xl mx-auto text-primary">
+        <h2 class="text-5xl my-4 text-center font-bold">Послуги та вартість</h2>
 
-        <div>
-          <div>
-            <h3>Стратегічна сесія</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 text-2xl">
+          <div
+            class="bg-accent p-6 rounded-4xl border-primary border-4 max-w-[400px] mx-auto flex flex-col justify-between"
+          >
+            <h3 class="text-3xl font-bold text-center my-4">
+              Стратегічна сесія
+            </h3>
 
-            <h4>Формат та тривалість</h4>
+            <h4 class="text-center font-bold my-4">Формат та тривалість</h4>
 
-            <ol>
+            <ol class="list-disc list-outside ml-10">
               <li>2 години інтенсивної роботи над вашим запитом</li>
               <li>
                 Індивідуальна консультація у форматі діалогу.
@@ -290,30 +296,37 @@
               </li>
             </ol>
 
-            <h4>Додаткові матеріали</h4>
+            <h4 class="text-center font-bold my-4">Додаткові матеріали</h4>
 
-            <p>
+            <p class="grow-1">
               Усі ключові висновки та індивідуальні рекомендації фіксуються під
-              час сесії.
+              час сесії. <br />
               <span class="italic"
                 >Шаблони, зразки та детальні рекомендації для роботи з командою
                 передбачені у пакетах з повним супроводом</span
               >.
             </p>
 
-            <h4>Вартість</h4>
+            <h4 class="text-center font-bold my-4">Вартість</h4>
 
-            <p>130 євро</p>
+            <p class="text-center font-bold my-4">130 євро</p>
 
-            <button>Замовити</button>
+            <button
+              class="bg-primary text-white rounded-full hover:bg-primary-light active:bg-primary-dark py-2 px-8 mx-auto block cursor-pointer mt-6"
+            >
+              Замовити
+            </button>
           </div>
 
-          <div>
-            <h3>Стратегічний прорив</h3>
-
-            <h4>Формат та тривалість</h4>
-
-            <ol>
+          <!-- Updated code for Стратегічний прорив -->
+          <div
+            class="bg-accent p-6 rounded-4xl border-primary border-4 max-w-[400px] mx-auto flex flex-col justify-between"
+          >
+            <h3 class="text-3xl font-bold text-center my-4">
+              Стратегічний прорив
+            </h3>
+            <h4 class="text-center font-bold my-4">Формат та тривалість</h4>
+            <ol class="list-disc list-outside ml-10">
               <li>
                 2 індивідуальні стратегічні сесії на місяць (кожна по 2 години).
               </li>
@@ -326,39 +339,52 @@
                 напрацювань в робочий час
               </li>
             </ol>
-
-            <h4>Додаткові матеріали</h4>
-
+            <h4 class="text-center font-bold my-4">Додаткові матеріали</h4>
             <p>
               За потреби надаються персоналізовані інструменти та рекомендації,
               що надаються за результатами сесій, для ефективної роботи над
               вашими цілями.
             </p>
-
-            <h4>Вартість</h4>
-
-            <p>
+            <h4 class="text-center font-bold my-4">Вартість</h4>
+            <p class="text-center font-bold my-4">
               700 євро <br />
               за місяць
             </p>
-
-            <p>або</p>
-
-            <p>
+            <p class="text-center">або</p>
+            <p class="text-center font-bold my-4">
               1500 євро <br />
               за 3 місяці
             </p>
-
-            <button>Замовити</button>
+            <button
+              class="bg-primary text-white rounded-full hover:bg-primary-light active:bg-primary-dark py-2 px-8 mx-auto block cursor-pointer mt-6"
+            >
+              Замовити
+            </button>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>Розроблено з ❤️</p>
+    <footer class="bg-accent text-primary p-10 text-xl mt-15">
+      <div
+        class="max-w-screen-xl mx-auto flex flex-row justify-between items-center gap-6"
+      >
+        <div>
+          <p>Розроблено з ❤️</p>
 
-      <p>© 2025 Анна Ратнікова</p>
+          <p>© 2025 Анна Ратнікова</p>
+        </div>
+
+        <div class="flex flex-row gap-4">
+          <a href="#" class="cursor-pointer">
+            <img src="/instagram.png" alt="Instagram" class="w-10 h-10" />
+          </a>
+
+          <a href="#" class="cursor-pointer">
+            <img src="/telegram.png" alt="Instagram" class="w-10 h-10" />
+          </a>
+        </div>
+      </div>
     </footer>
 
     <script type="module" src="/src/main.js"></script>
