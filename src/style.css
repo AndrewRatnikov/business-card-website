@@ -1,1 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #682e21;
+  --color-secondary: #f7e3d6;
+  --color-accent: #fff7f2;
+}
+
+* {
+  font-family: "Cormorant Garamond", serif;
+}

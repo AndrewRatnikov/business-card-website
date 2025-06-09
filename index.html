@@ -4,42 +4,45 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Анна Ратнікова | Стратег для експертів</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/">Головна</a></li>
+    <header class="bg-primary">
+      <nav class="text-white">
+        <ul class="flex justify-center gap-6 items-center p-4 text-2xl">
+          <li><a href="#" class="hover:underline">Головна</a></li>
 
-          <li><a href="/services">Послуги</a></li>
+          <li><a href="#services" class="hover:underline">Послуги</a></li>
 
-          <li><a href="/about">Про мене</a></li>
+          <li><a href="#about" class="hover:underline">Про мене</a></li>
 
-          <li><a href="/testimonials">Відгуки</a></li>
+          <li><a href="#testimonials" class="hover:underline">Відгуки</a></li>
 
-          <li><a href="/prices">Ціни</a></li>
+          <li><a href="#prices" class="hover:underline">Ціни</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="hero">
-        <div><img /></div>
+      <section
+        id="hero"
+        class="flex flex-row items-center p-8 max-w-screen-xl mx-auto gap-8"
+      >
+        <img src="public/hero.png" alt="Main photo" class="w-[500px] h-auto" />
 
-        <div>
-          <h1>Анна Ратнікова</h1>
+        <div class="text-primary text-2xl">
+          <h1 class="text-6xl font-bold my-6">Анна Ратнікова</h1>
 
-          <h3>Стратег для експертів</h3>
+          <h3 class="text-4xl my-4">Стратег для експертів</h3>
 
-          <p>
+          <p class="my-4">
             Я допомагаю фахівцям та брендам перетворити їхні знання на успішний
             інформаційний проєкт.
           </p>
 
           <p>Разом ми:</p>
 
-          <ol>
+          <ol class="list-disc list-outside ml-10">
             <li>
               Чітко сформулюємо ідею та структуру твого майбутнього продукту.
             </li>
@@ -51,7 +54,7 @@
             <li>Організуємо ефективну команду, яка підсилить твої зусилля.</li>
           </ol>
 
-          <p>
+          <p class="my-4">
             Від ідеї до перших продажів – я твій стратег, що допомагає на
             кожному етапі, звільняючи тебе для фокусу на головному – твоїй
             експертизі!
