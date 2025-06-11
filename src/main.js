@@ -1,3 +1,4 @@
+import "./firebaseSetup";
 import "./style.css";
 
 const ordersHandler = {
