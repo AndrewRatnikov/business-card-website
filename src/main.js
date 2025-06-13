@@ -1,4 +1,5 @@
-import "./firebaseSetup";
+import { analytics } from "./firebaseSetup";
+import { logEvent } from "firebase/analytics";
 import "./style.css";
 
 const ordersHandler = {
@@ -8,22 +9,22 @@ const ordersHandler = {
 
   eventHandlers() {
     const mentorshipOrderButton = document.querySelector(
-      "#mentorship-order-btn"
+      "#mentorship-order-btn",
     );
     mentorshipOrderButton.addEventListener("click", this.mentorshipOrder);
 
     const consultationOrderButton = document.querySelector(
-      "#consultation-order-btn"
+      "#consultation-order-btn",
     );
     consultationOrderButton.addEventListener("click", this.consultationOrder);
   },
 
   mentorshipOrder() {
-    console.log("Mentorship order clicked");
+    logEvent(analytics, "Mentorship order clicked");
   },
 
   consultationOrder() {
-    console.log("Consultation order clicked");
+    logEvent(analytics, "Consultation order clicked");
   },
 };
 
