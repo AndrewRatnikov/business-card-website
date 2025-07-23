@@ -1,5 +1,5 @@
-import { analytics } from "./firebaseSetup";
 import { logEvent } from "firebase/analytics";
+import { analytics } from "./firebaseSetup";
 import "./style.css";
 
 const ordersHandler = {
