@@ -1,39 +1,13 @@
-<!doctype html>
-<html lang="uk">
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+---
 
-<head>
-  <meta charset="UTF-8" />
-  <!-- Favicons for all platforms -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/favicon/site.webmanifest" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png" />
-  <link rel="shortcut icon" href="/favicon/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Договір оферти - Анна Ратнікова</title>
-</head>
-
-<body>
-  <header class="bg-primary">
-    <nav class="text-white">
-      <ul class="flex flex-col sm:flex-row justify-center gap-6 items-center p-4 text-2xl">
-        <li><a href="/" class="hover:underline">Головна</a></li>
-
-        <li><a href="/#about" class="hover:underline">Про мене</a></li>
-
-        <!-- <li><a href="/#testimonials" class="hover:underline">Відгуки</a></li> -->
-
-        <li><a href="/#prices" class="hover:underline">Послуги</a></li>
-
-        <li><a href="/#footer" class="hover:underline">Контакти</a></li>
-      </ul>
-    </nav>
-  </header>
-
+<Layout title="Договір оферти - Анна Ратнікова">
+  <Header />
   <main>
-    <section class="bg-accent text-primary py-15">
+    <section class="bg-accent text-primary py-5">
       <div class="max-w-3xl mx-auto px-4 sm:px-8 py-10 bg-white bg-opacity-80 rounded-xl shadow-lg flex flex-col gap-1">
         <h1 class="text-4xl font-bold mb-4 text-center">
           ДОГОВІР ОФЕРТИ
@@ -66,7 +40,7 @@
               <li style="counter-increment: sublist-item;">1.3. Виконавець – ФОП Ратнікова Анна Миколаївна. Найменування
                 Виконавця, РНОКПП 3177213520, платник єдиного
                 податку 3 групи.</li>
-              <li style="counter-increment: sublist-item;">1.4. Послуга - діяльність Виконавця, яка пов'язана з
+              <li style="counter-increment: sublist-item;">1.4. Послуга - діяльність Виконавця, яка пов'''язана з
                 наданням послуг з консультування
                 населення/ФОП/юридичний осіб з питань особистісного розвитку, у формі: проведення занять, як офлайн у
                 режимі реального часу чи у записі, так і очно, дистанційно у форматі онлайн-трансляцій та презентацій
@@ -612,67 +586,5 @@
       </div>
     </section>
   </main>
-
-  <footer id="footer" class="bg-accent text-primary p-10 text-xl">
-    <div class="max-w-screen-xl mx-auto flex flex-row justify-between items-center gap-6">
-      <div>
-        <p>Розроблено з ❤️</p>
-      </div>
-
-      <div class="flex flex-col gap-2">
-        <a rel="noopener" target="_blank" href="https://www.instagram.com/ratnikova_anna_/"
-          class="cursor-pointer flex col gap-1">
-          <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current">
-            <g>
-              <path
-                d="M128,84a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164ZM172,32H84A52.059,52.059,0,0,0,32,84v88a52.059,52.059,0,0,0,52,52h88a52.059,52.059,0,0,0,52-52V84A52.059,52.059,0,0,0,172,32Zm44,140a44.04978,44.04978,0,0,1-44,44H84a44.04978,44.04978,0,0,1-44-44V84A44.04978,44.04978,0,0,1,84,40h88a44.04978,44.04978,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,188,76Z">
-              </path>
-            </g>
-          </svg>
-
-          Instagram-акаунт
-        </a>
-
-        <a rel="noopener" target="_blank" href="https://t.me/AnnRatnikova" class="cursor-pointer flex col gap-1">
-          <svg viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current">
-            <g>
-              <path
-                d="M228.646,34.7676a11.96514,11.96514,0,0,0-12.21778-2.0752L31.87109,105.19729a11.99915,11.99915,0,0,0,2.03467,22.93457L84,138.15139v61.833a11.8137,11.8137,0,0,0,7.40771,11.08593,12.17148,12.17148,0,0,0,4.66846.94434,11.83219,11.83219,0,0,0,8.40918-3.5459l28.59619-28.59619L175.2749,217.003a11.89844,11.89844,0,0,0,7.88819,3.00195,12.112,12.112,0,0,0,3.72265-.59082,11.89762,11.89762,0,0,0,8.01319-8.73925L232.5127,46.542A11.97177,11.97177,0,0,0,228.646,34.7676ZM32.2749,116.71877a3.86572,3.86572,0,0,1,2.522-4.07617L203.97217,46.18044,87.07227,130.60769,35.47461,120.28811A3.86618,3.86618,0,0,1,32.2749,116.71877Zm66.55322,86.09375A3.99976,3.99976,0,0,1,92,199.9844V143.72048l35.064,30.85669ZM224.71484,44.7549,187.10107,208.88772a4.0003,4.0003,0,0,1-6.5415,2.10937l-86.1543-75.8164,129.66309-93.645A3.80732,3.80732,0,0,1,224.71484,44.7549Z">
-              </path>
-            </g>
-          </svg>
-
-          Відділ турботи
-        </a>
-
-        <a href="mailto:office.ratnikova@gmail.com" class="cursor-pointer flex col gap-1">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6 stroke-current">
-            <g id="SVGRepo_iconCarrier">
-              <rect x="8" y="12" width="48" height="40"></rect>
-              <polyline points="56 20 32 36 8 20"></polyline>
-            </g>
-          </svg>
-
-          office.ratnikova@gmail.com
-        </a>
-      </div>
-    </div>
-
-    <div
-      class="max-w-screen-xl mx-auto flex flex-row justify-between items-center gap-6 mt-10 pt-3 border-t-1 border-primary-light">
-      <p>© 2025 Анна Ратнікова</p>
-
-      <a class="cursor-pointer hover:underline hover:text-primary-light focus:text-primary-dark" href="/privacy-policy">
-        Політика конфіденційності
-      </a>
-
-      <a class="cursor-pointer hover:underline hover:text-primary-light focus:text-primary-dark" href="/oferta">
-        Умови надання послуг
-      </a>
-    </div>
-  </footer>
-
-  <script type="module" src="/src/main.js"></script>
-</body>
-
-</html>
+  <Footer />
+</Layout>
