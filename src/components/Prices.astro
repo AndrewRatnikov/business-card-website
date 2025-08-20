@@ -2,7 +2,7 @@
   <h2 class="text-5xl my-4 text-center font-bold">Послуги та вартість</h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 text-2xl">
-    <div class="bg-accent p-6 rounded-4xl border-primary border-4 max-w-[400px] mx-auto flex flex-col justify-between">
+    <div class="bg-accent p-6 rounded-3xl border-primary border-4 max-w-[400px] mx-auto flex flex-col justify-between">
       <h3 class="text-3xl font-bold text-center my-4">
         Стратегічна сесія
       </h3>
@@ -41,8 +41,7 @@
       </button>
     </div>
 
-    <!-- Updated code for Стратегічний прорив -->
-    <div class="bg-accent p-6 rounded-4xl border-primary border-4 max-w-[400px] mx-auto flex flex-col justify-between">
+    <div class="bg-accent p-6 rounded-3xl border-primary border-4 max-w-[400px] mx-auto flex flex-col justify-between">
       <h3 class="text-3xl font-bold text-center my-4">
         Стратегічний прорив
       </h3>
@@ -82,3 +81,38 @@
     </div>
   </div>
 </section>
+
+<script>
+  import { logEvent } from "firebase/analytics";
+  import { analytics } from "@/firebase";
+
+  const ordersHandler = {
+    init() {
+      this.eventHandlers();
+    },
+
+    eventHandlers() {
+      const mentorshipOrderButton = document.querySelector(
+        "#mentorship-order-btn",
+      );
+      mentorshipOrderButton?.addEventListener("click", this.mentorshipOrder);
+
+      const consultationOrderButton = document.querySelector(
+        "#consultation-order-btn",
+      );
+      consultationOrderButton?.addEventListener("click", this.consultationOrder);
+    },
+
+    mentorshipOrder() {
+      console.log("Mentorship order clicked");
+      logEvent(analytics, "Mentorship order clicked");
+    },
+
+    consultationOrder() {
+      console.log("Consultation order clicked");
+      logEvent(analytics, "Consultation order clicked");
+    },
+  };
+
+  ordersHandler.init();
+</script>

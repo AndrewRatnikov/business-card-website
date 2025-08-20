@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --color-primary: #682e21;
-  --color-primary-light: #753f34;
-  --color-primary-dark: #5f2a1e;
-  --color-secondary: #f7e3d6;
-  --color-accent: #fff7f2;
+@layer base {
+  :root {
+    --color-primary: #682e21;
+    --color-primary-light: #753f34;
+    --color-primary-dark: #5f2a1e;
+    --color-secondary: #f7e3d6;
+    --color-accent: #fff7f2;
+  }
 }
 
 * {
