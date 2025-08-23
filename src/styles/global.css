@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #682e21;
+    --color-primary-light: #753f34;
+    --color-primary-dark: #5f2a1e;
+    --color-secondary: #f7e3d6;
+    --color-accent: #fff7f2;
+  }
+
+  * {
+    font-family: "Cormorant Garamond", serif;
+  }
