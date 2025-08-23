@@ -1,0 +1,116 @@
+<section id="prices" class="p-2 max-w-screen-xl mx-auto text-primary">
+  <h2 class="text-5xl my-4 text-center font-bold">Послуги та вартість</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 text-2xl">
+    <div class="bg-accent p-6 rounded-3xl border-primary border-4 max-w-[400px] mx-auto flex flex-col justify-between">
+      <h3 class="text-3xl font-bold text-center my-4">
+        Стратегічна сесія
+      </h3>
+
+      <h4 class="text-center font-bold my-4">Формат та тривалість</h4>
+
+      <ol class="list-disc list-outside ml-10">
+        <li>2 години інтенсивної роботи над вашим запитом</li>
+        <li>
+          Індивідуальна консультація у форматі діалогу.
+          <span class="italic">Ми зосередимося на ваших питаннях та спільно знайдемо
+            рішення</span>
+        </li>
+        <li>
+          Максимальна увага до вашого запиту під час сесії (<span class="italic">за додатковими питаннями запрошую
+            до пакету з
+            супроводом</span>)
+        </li>
+      </ol>
+
+      <h4 class="text-center font-bold my-4">Додаткові матеріали</h4>
+
+      <p class="grow-1">
+        Усі ключові висновки та індивідуальні рекомендації фіксуються під
+        час сесії. <br />
+        <span class="italic">Шаблони, зразки та детальні рекомендації для роботи з командою
+          передбачені у пакетах з повним супроводом</span>.
+      </p>
+
+      <h4 class="text-center font-bold my-4">Вартість</h4>
+
+      <p class="text-center font-bold my-4">150 євро</p>
+
+      <button id="consultation-order-btn" class="bg-primary text-white rounded-full hover:bg-primary-light active:bg-primary-dark py-2 px-8 mx-auto block cursor-pointer mt-6">
+        Замовити
+      </button>
+    </div>
+
+    <div class="bg-accent p-6 rounded-3xl border-primary border-4 max-w-[400px] mx-auto flex flex-col justify-between">
+      <h3 class="text-3xl font-bold text-center my-4">
+        Стратегічний прорив
+      </h3>
+      <h4 class="text-center font-bold my-4">Формат та тривалість</h4>
+      <ol class="list-disc list-outside ml-10">
+        <li>
+          2 індивідуальні стратегічні сесії на місяць (кожна по 2 години).
+        </li>
+        <li>
+          Підтримка у персональному чаті протягом робочого часу для
+          вирішення поточних питань
+        </li>
+        <li>
+          Максимальна увага до вашого запиту під час сесії + розгляд ваших
+          напрацювань в робочий час
+        </li>
+      </ol>
+      <h4 class="text-center font-bold my-4">Додаткові матеріали</h4>
+      <p>
+        За потреби надаються персоналізовані інструменти та рекомендації,
+        що надаються за результатами сесій, для ефективної роботи над
+        вашими цілями.
+      </p>
+      <h4 class="text-center font-bold my-4">Вартість</h4>
+      <p class="text-center font-bold my-4">
+        900 євро <br />
+        за місяць
+      </p>
+      <p class="text-center">або</p>
+      <p class="text-center font-bold my-4">
+        2100 євро <br />
+        за 3 місяці
+      </p>
+      <button id="mentorship-order-btn" class="bg-primary text-white rounded-full hover:bg-primary-light active:bg-primary-dark py-2 px-8 mx-auto block cursor-pointer mt-6">
+        Замовити
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { logEvent } from "firebase/analytics";
+  import { analytics } from "@/firebase";
+
+  const ordersHandler = {
+    init() {
+      this.eventHandlers();
+    },
+
+    eventHandlers() {
+      const mentorshipOrderButton = document.querySelector(
+        "#mentorship-order-btn",
+      );
+      mentorshipOrderButton?.addEventListener("click", this.mentorshipOrder);
+
+      const consultationOrderButton = document.querySelector(
+        "#consultation-order-btn",
+      );
+      consultationOrderButton?.addEventListener("click", this.consultationOrder);
+    },
+
+    mentorshipOrder() {
+      logEvent(analytics, "Mentorship order clicked");
+    },
+
+    consultationOrder() {
+      logEvent(analytics, "Consultation order clicked");
+    },
+  };
+
+  ordersHandler.init();
+</script>
