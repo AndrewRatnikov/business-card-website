@@ -1,0 +1,1347 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout
+  title="AI-Інструменти для Експертів | Інтерактивний Гайд | Анна Ратнікова"
+>
+  <main class="pb-10">
+    <div class="float-element float-1"></div>
+    <div class="float-element float-2"></div>
+
+    <div class="container">
+      <header>
+        <h1>AI-Інструменти для Експертів</h1>
+        <p class="subtitle">
+          Повний інтерактивний гайд з активними посиланнями
+        </p>
+        <p class="author">
+          Розробила <a
+            href="https://www.instagram.com/ratnikova_anna_/"
+            target="_blank">Ратнікова Анна</a
+          >
+        </p>
+      </header>
+
+      <nav>
+        <button class="nav-btn active" onclick="showSection('language')"
+          >Мовні AI</button
+        >
+        <button class="nav-btn" onclick="showSection('visual')">Візуал</button>
+        <button class="nav-btn" onclick="showSection('other')"
+          >Інші інструменти</button
+        >
+        <button class="nav-btn" onclick="showSection('quick')"
+          >Швидкий довідник</button
+        >
+      </nav>
+
+      <!-- Language Models Section -->
+      <div id="language" class="section active">
+        <div class="category-header">
+          <h2>Мовні AI-моделі</h2>
+          <p>
+            Універсальні помічники для роботи з текстом, аналітикою та креативом
+          </p>
+        </div>
+
+        <!-- ChatGPT -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">GP</span>
+                ChatGPT
+                <span class="tool-company">(OpenAI)</span>
+              </div>
+            </div>
+            <div class="tool-price">від $20/міс</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Хто це:</strong> Найрозповсюдженіший мовний AI широкого профілю.
+            Один із найкращих у розумінні контексту та людських запитів.
+          </p>
+
+          <p class="tool-description">
+            <strong>Коли використовувати:</strong> Універсальний помічник для brainstorming,
+            написання текстів, відповідей на питання, структурування ідей, створення
+            контент-планів.
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Сильні сторони</h4>
+            <ul>
+              <li>Широкий спектр задач — від креативу до аналітики</li>
+              <li>
+                Можливість створювати Custom GPTs (цифрових асистентів під
+                конкретні потреби)
+              </li>
+              <li>
+                Добре працює з контекстом і пам'ятає попередні повідомлення в
+                межах чату
+              </li>
+              <li>Інтуїтивний для новачків</li>
+            </ul>
+          </div>
+
+          <div class="tool-section weaknesses">
+            <h4>⚠ Слабкі сторони</h4>
+            <ul>
+              <li>
+                Без чіткого промпта може давати загальні, шаблонні відповіді
+              </li>
+              <li>
+                Іноді "галюцинує" (вигадує факти), особливо при запитах на
+                актуальні дані
+              </li>
+              <li>
+                У довгих розмовах може "забувати" початковий контекст або роль
+              </li>
+              <li>
+                Безкоштовна версія обмежена (GPT-3.5), для GPT-4 потрібна
+                підписка
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://chat.openai.com" target="_blank" class="tool-link">
+            Перейти до ChatGPT →
+          </a>
+        </div>
+
+        <!-- Gemini -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">GM</span>
+                Gemini
+                <span class="tool-company">(Google)</span>
+              </div>
+            </div>
+            <div class="tool-price">$19.99/міс</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Хто це:</strong> Мовна модель від Google з інтеграцією до екосистеми
+            Google та потужним аналітичним інструментарієм.
+          </p>
+
+          <p class="tool-description">
+            <strong>Коли використовувати:</strong> Аналітика, порівняння даних, пошук
+            інформації в інтернеті, робота з Google Workspace (Docs, Sheets), створення
+            візуального контенту.
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Сильні сторони</h4>
+            <ul>
+              <li>
+                Вбудований доступ до Google Search — актуальна інформація в
+                реальному часі
+              </li>
+              <li>
+                Готові Gem-боти під конкретні задачі (навчання, аналіз даних,
+                креатив)
+              </li>
+              <li>Вбудований генератор зображень Imagen 3</li>
+              <li>Може переносити обличчя з фото на згенероване зображення</li>
+              <li>Працює з документами Google безпосередньо в інтерфейсі</li>
+            </ul>
+          </div>
+
+          <div class="tool-section weaknesses">
+            <h4>⚠ Слабкі сторони</h4>
+            <ul>
+              <li>Менш креативний у "м'яких" запитах порівняно з ChatGPT</li>
+              <li>Важче розуміє підтекст і нюанси людської мови</li>
+              <li>Іноді надто "технічний" у відповідях</li>
+            </ul>
+          </div>
+
+          <a href="https://gemini.google.com" target="_blank" class="tool-link">
+            Перейти до Gemini →
+          </a>
+        </div>
+
+        <!-- Claude -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">CL</span>
+                Claude
+                <span class="tool-company">(Anthropic)</span>
+              </div>
+            </div>
+            <div class="tool-price">від $20/міс</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Хто це:</strong> Мовна модель від компанії Anthropic. Орієнтована
+            на безпеку, структурованість та аналітичне мислення.
+          </p>
+
+          <p class="tool-description">
+            <strong>Коли використовувати:</strong> Стратегічне планування, аналіз
+            великих обсягів тексту, програмування, маркетингові стратегії, написання
+            довгих структурованих документів, робота з файлами (PDF, Word, Excel).
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Сильні сторони</h4>
+            <ul>
+              <li>
+                <strong>Artifacts</strong> — унікальна функція для створення інтерактивних
+                документів, коду, графіки без засмічення чату
+              </li>
+              <li>
+                Один із найбільших контекстних вікон (200K токенів) — може
+                обробляти цілі книги
+              </li>
+              <li>Структурований, стратегічний підхід до відповідей</li>
+              <li>Чудово працює з кодом і технічними завданнями</li>
+              <li>Може створювати повноцінні веб-додатки без програмування</li>
+            </ul>
+          </div>
+
+          <div class="tool-section weaknesses">
+            <h4>⚠ Слабкі сторони</h4>
+            <ul>
+              <li>Видає багато тексту — може перевищувати запит</li>
+              <li>На безкоштовній версії токени швидко закінчуються</li>
+              <li>Менш "людяний" у casual-розмовах</li>
+              <li>
+                Іноді надто обережний і може відмовлятися від креативних запитів
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://claude.ai" target="_blank" class="tool-link">
+            Перейти до Claude →
+          </a>
+        </div>
+
+        <!-- Grok -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">GR</span>
+                Grok
+                <span class="tool-company">(xAI, Ілон Маск)</span>
+              </div>
+            </div>
+            <div class="tool-price">$8-16/міс (X Premium)</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Хто це:</strong> Нова мовна модель із акцентом на актуальність,
+            гумор та доступ до платформи X (Twitter).
+          </p>
+
+          <p class="tool-description">
+            <strong>Коли використовувати:</strong> Моніторинг трендів у соцмережах,
+            створення хуків для контенту, генерація та анімація зображень, пошук
+            "свіжої" інформації.
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Сильні сторони</h4>
+            <ul>
+              <li>
+                Доступ до X (Twitter) у реальному часі — моніторинг постів і
+                трендів
+              </li>
+              <li>
+                Генерує зображення будь-якої складності та може їх анімувати
+              </li>
+              <li>
+                Менш "цензурований" — може відповідати на провокаційні запити
+              </li>
+              <li>Має чуття гумору та неформальний стиль</li>
+            </ul>
+          </div>
+
+          <div class="tool-section weaknesses">
+            <h4>⚠ Слабкі сторони</h4>
+            <ul>
+              <li>Надто самовпевнений — може видавати здогадки за факти</li>
+              <li>Гірше справляється з глибокими аналітичними запитами</li>
+              <li>Доступ обмежений підпискою X Premium</li>
+            </ul>
+          </div>
+
+          <a href="https://grok.com/" target="_blank" class="tool-link">
+            Перейти до Grok →
+          </a>
+        </div>
+
+        <!-- Perplexity -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">PX</span>
+                Perplexity AI
+              </div>
+            </div>
+            <div class="tool-price">$20/міс (Pro)</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Хто це:</strong> Не класична мовна модель, а AI-пошукова система
+            з акцентом на точність та джерела.
+          </p>
+
+          <p class="tool-description">
+            <strong>Коли використовувати:</strong> Дослідження, перевірка фактів,
+            пошук статистики, інструкції, моніторинг новин із різних сфер.
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Сильні сторони</h4>
+            <ul>
+              <li>Завжди надає посилання на джерела</li>
+              <li>Чудово працює з актуальною інформацією та новинами</li>
+              <li>Структурує відповіді з розбивкою на розділи</li>
+              <li>Може шукати в академічних базах даних</li>
+            </ul>
+          </div>
+
+          <div class="tool-section weaknesses">
+            <h4>⚠ Слабкі сторони</h4>
+            <ul>
+              <li>Менш креативний — фокус на фактах, а не на ідеях</li>
+              <li>Не підходить для brainstorming або емоційного контенту</li>
+              <li>Платна версія потрібна для необмеженого доступу</li>
+            </ul>
+          </div>
+
+          <a href="https://www.perplexity.ai" target="_blank" class="tool-link">
+            Перейти до Perplexity →
+          </a>
+        </div>
+      </div>
+
+      <!-- Visual Tools Section -->
+      <div id="visual" class="section">
+        <div class="category-header">
+          <h2>Робота з зображеннями</h2>
+          <p>Генератори та редактори для створення візуального контенту</p>
+        </div>
+
+        <h3 style="color: #b8865b; margin: 30px 0 20px 0; font-size: 1.5em;">
+          Для експертів початкового рівня:
+        </h3>
+
+        <!-- Imagen 3 -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">IM</span>
+                Imagen 3
+                <span class="tool-company">(Google Gemini)</span>
+              </div>
+            </div>
+            <div class="tool-price">Вбудований в Gemini</div>
+          </div>
+
+          <div class="tool-section strengths">
+            <h4>✓ Переваги</h4>
+            <ul>
+              <li>Вбудований у Gemini, простий у використанні</li>
+              <li>Добре справляється з реалістичними зображеннями</li>
+              <li>Може переносити обличчя з фото</li>
+            </ul>
+          </div>
+
+          <a href="https://gemini.google.com" target="_blank" class="tool-link">
+            Перейти до Imagen 3 →
+          </a>
+        </div>
+
+        <!-- Grok Image -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">GI</span>
+                Grok Image Generator
+                <span class="tool-company">(xAI)</span>
+              </div>
+            </div>
+            <div class="tool-price">Входить у X Premium</div>
+          </div>
+
+          <div class="tool-section strengths">
+            <h4>✓ Переваги</h4>
+            <ul>
+              <li>Генерує та анімує зображення</li>
+              <li>Менше обмежень у контенті</li>
+              <li>Швидка генерація</li>
+            </ul>
+          </div>
+
+          <a href="https://grok.com/imagine" target="_blank" class="tool-link">
+            Перейти до Grok Image →
+          </a>
+        </div>
+
+        <!-- Reve -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">RV</span>
+                Reve
+              </div>
+            </div>
+            <div class="tool-price">Уточнити на сайті</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Для чого:</strong> Створення брендбуків та дотримання єдиного
+            стилю в зображеннях.
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Сильні сторони</h4>
+            <ul>
+              <li>Чудово підтримує єдиний стиль у всіх зображеннях</li>
+              <li>Ідеально для розробки брендбуків</li>
+              <li>Послідовність у візуальній ідентичності</li>
+              <li>Підходить для професійного брендингу</li>
+            </ul>
+          </div>
+
+          <a href="https://reve.com" target="_blank" class="tool-link">
+            Перейти до Reve →
+          </a>
+        </div>
+
+        <!-- Recraft -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">RC</span>
+                Recraft AI
+              </div>
+            </div>
+            <div class="tool-price">Безкоштовна версія є</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Для чого:</strong> Створення стікерів, іконок, логотипів.
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Переваги</h4>
+            <ul>
+              <li>Векторна графіка</li>
+              <li>Контроль стилю та кольорів</li>
+              <li>Ідеально для іконок та UI-елементів</li>
+            </ul>
+          </div>
+
+          <a href="https://www.recraft.ai" target="_blank" class="tool-link">
+            Перейти до Recraft →
+          </a>
+        </div>
+
+        <!-- Ideogram -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">ID</span>
+                Ideogram
+              </div>
+            </div>
+            <div class="tool-price">Безкоштовна версія</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Для чого:</strong> Створення зображень з текстом (логотипи, постери).
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Переваги</h4>
+            <ul>
+              <li>Чудово працює з текстом на зображеннях</li>
+              <li>Ідеально для логотипів та постерів</li>
+              <li>Безкоштовна версія доступна</li>
+            </ul>
+          </div>
+
+          <a href="https://ideogram.ai" target="_blank" class="tool-link">
+            Перейти до Ideogram →
+          </a>
+        </div>
+
+        <div
+          style="background: linear-gradient(135deg, #fff5e6 0%, #ffe8cc 100%); padding: 25px; border-radius: 20px; margin-top: 30px; border-left: 5px solid #daa569;"
+        >
+          <h3 style="color: #8b6f47; margin-bottom: 12px; font-size: 1.3em;">
+            Для професіоналів
+          </h3>
+          <p style="color: #495057; font-size: 1.05em; line-height: 1.7;">
+            Для більш професійної роботи з візуалом існують потужні платні
+            інструменти, такі як <strong>Midjourney</strong> (від $10/міс) та <strong
+              >Leonardo AI</strong
+            > (від $12/міс). Вони пропонують найвищу якість художніх зображень та
+            розширений контроль над результатом. Проте для більшості експертів перерахованих
+            вище інструментів буде достатньо для створення якісного контенту.
+          </p>
+        </div>
+      </div>
+
+      <!-- Other Tools Section -->
+      <div id="other" class="section">
+        <div class="category-header">
+          <h2>Інші корисні AI-інструменти</h2>
+          <p>
+            Спеціалізовані інструменти для презентацій, відео та інфографіки
+          </p>
+        </div>
+
+        <!-- Gamma -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">GA</span>
+                Gamma AI
+              </div>
+            </div>
+            <div class="tool-price">від $10/міс</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Для чого:</strong> Створення презентацій, каруселей, одностаронок,
+            сайтів.
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Сильні сторони</h4>
+            <ul>
+              <li>Автоматична генерація на основі тексту або теми</li>
+              <li>Професійні шаблони дизайну</li>
+              <li>Швидке створення презентацій</li>
+              <li>Можливість створювати інтерактивні сайти</li>
+            </ul>
+          </div>
+
+          <a href="https://gamma.app" target="_blank" class="tool-link">
+            Перейти до Gamma →
+          </a>
+        </div>
+
+        <!-- HeyGen -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">HG</span>
+                HeyGen
+              </div>
+            </div>
+            <div class="tool-price">від $29/міс</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Для чого:</strong> Створення AI-аватарів для відео.
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Сильні сторони</h4>
+            <ul>
+              <li>Реалістична синхронізація губ</li>
+              <li>Багато мов (включно з українською)</li>
+              <li>Можливість створити власний аватар</li>
+              <li>Швидка генерація відео</li>
+            </ul>
+          </div>
+
+          <a href="https://www.heygen.com" target="_blank" class="tool-link">
+            Перейти до HeyGen →
+          </a>
+        </div>
+
+        <!-- Napkin -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">NP</span>
+                Napkin AI
+              </div>
+            </div>
+            <div class="tool-price">Безкоштовна версія</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Для чого:</strong> Перетворення тексту в інфографіку.
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Сильні сторони</h4>
+            <ul>
+              <li>Швидко візуалізує складні концепції</li>
+              <li>Простий у використанні</li>
+              <li>Багато стилів інфографіки</li>
+            </ul>
+          </div>
+
+          <a href="https://www.napkin.ai" target="_blank" class="tool-link">
+            Перейти до Napkin →
+          </a>
+        </div>
+
+        <!-- Canva -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">CV</span>
+                Canva Magic Studio
+              </div>
+            </div>
+            <div class="tool-price">від $15/міс</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Для чого:</strong> Дизайн постів, презентацій, відео.
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Сильні сторони</h4>
+            <ul>
+              <li>
+                Вбудовані AI-інструменти (Magic Write, Magic Eraser, Text to
+                Image)
+              </li>
+              <li>Величезна бібліотека шаблонів</li>
+              <li>Інтуїтивний інтерфейс</li>
+              <li>Підходить для соцмереж</li>
+            </ul>
+          </div>
+
+          <a href="https://www.canva.com/ai" target="_blank" class="tool-link">
+            Перейти до Canva →
+          </a>
+        </div>
+
+        <!-- Runway -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">RW</span>
+                Runway ML
+              </div>
+            </div>
+            <div class="tool-price">від $15/міс</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Для чого:</strong> Редагування відео, генерація відео з тексту.
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Сильні сторони</h4>
+            <ul>
+              <li>Професійні інструменти для відеомейкерів</li>
+              <li>Генерація відео з тексту (Gen-2)</li>
+              <li>Розширення відео, видалення об'єктів</li>
+              <li>Покадрова анімація</li>
+            </ul>
+          </div>
+
+          <a href="https://runwayml.com" target="_blank" class="tool-link">
+            Перейти до Runway →
+          </a>
+        </div>
+
+        <!-- Vizard -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">VZ</span>
+                Vizard AI
+              </div>
+            </div>
+            <div class="tool-price">від $20/міс</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Для чого:</strong> Автоматичне нарізання довгих відео на короткі
+            Reels для соцмереж.
+          </p>
+
+          <p class="tool-description">
+            <strong>Як працює:</strong> Завантажуєте вебінар → AI автоматично виділяє
+            динамічні фрагменти → додає B-roll, текст, музику → експортує Reels у
+            вертикальному форматі. Підтримує українську мову та кастомізацію стилю.
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Сильні сторони</h4>
+            <ul>
+              <li>Аналізує відео та виявляє ключові моменти</li>
+              <li>Генерує субтитри, переходи та короткі кліпи</li>
+              <li>До 30 Reels з одного вебінару</li>
+              <li>Підтримка української мови</li>
+              <li>Автоматичне додавання B-roll та музики</li>
+            </ul>
+          </div>
+
+          <div class="tool-section">
+            <h4>Ціни</h4>
+            <ul>
+              <li>
+                <strong>Безкоштовно:</strong> 60 хв обробки/міс, водяний знак
+              </li>
+              <li><strong>Pro ($20/міс):</strong> 600 хв, без знака, HD</li>
+              <li>
+                <strong>Business ($60/міс):</strong> необмежено для команд
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://vizard.ai" target="_blank" class="tool-link">
+            Перейти до Vizard →
+          </a>
+        </div>
+
+        <!-- Futurepedia -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div>
+              <div class="tool-name">
+                <span class="tool-icon">FP</span>
+                Futurepedia
+              </div>
+            </div>
+            <div class="tool-price">Безкоштовно</div>
+          </div>
+
+          <p class="tool-description">
+            <strong>Для чого:</strong> Каталог AI-сервісів для пошуку інструментів
+            за категоріями.
+          </p>
+
+          <div class="tool-section strengths">
+            <h4>✓ Сильні сторони</h4>
+            <ul>
+              <li>Пошук інструментів за категоріями та рейтингами</li>
+              <li>Щоденні оновлення нових AI-сервісів</li>
+              <li>Відгуки та порівняння інструментів</li>
+            </ul>
+          </div>
+
+          <a
+            href="https://www.futurepedia.io"
+            target="_blank"
+            class="tool-link"
+          >
+            Перейти до Futurepedia →
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Reference Section -->
+      <div id="quick" class="section">
+        <div class="quick-ref">
+          <h2>Швидкий довідник: До кого з чим іти</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Задача</th>
+                <th>Рекомендований інструмент</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Написання текстів, контент</td>
+                <td>ChatGPT, Claude</td>
+              </tr>
+              <tr>
+                <td>Стратегія, довгі документи</td>
+                <td>Claude</td>
+              </tr>
+              <tr>
+                <td>Аналітика, порівняння даних</td>
+                <td>Gemini</td>
+              </tr>
+              <tr>
+                <td>Пошук актуальної інформації</td>
+                <td>Perplexity, Gemini</td>
+              </tr>
+              <tr>
+                <td>Моніторинг трендів у соцмережах</td>
+                <td>Grok</td>
+              </tr>
+              <tr>
+                <td>Генерація зображень (прості)</td>
+                <td>Gemini, Grok, Recraft</td>
+              </tr>
+              <tr>
+                <td>Генерація зображень (професійні)</td>
+                <td>Midjourney, Leonardo AI</td>
+              </tr>
+              <tr>
+                <td>Створення брендбуків</td>
+                <td>Reve</td>
+              </tr>
+              <tr>
+                <td>Стікери, іконки, логотипи</td>
+                <td>Recraft, Ideogram</td>
+              </tr>
+              <tr>
+                <td>Презентації та сайти</td>
+                <td>Gamma</td>
+              </tr>
+              <tr>
+                <td>AI-аватари для відео</td>
+                <td>HeyGen</td>
+              </tr>
+              <tr>
+                <td>Інфографіка</td>
+                <td>Napkin AI</td>
+              </tr>
+              <tr>
+                <td>Дизайн для соцмереж</td>
+                <td>Canva Magic Studio</td>
+              </tr>
+              <tr>
+                <td>Редагування відео</td>
+                <td>Runway ML</td>
+              </tr>
+              <tr>
+                <td>Нарізка відео на Reels</td>
+                <td>Vizard AI</td>
+              </tr>
+              <tr>
+                <td>Пошук нових AI-інструментів</td>
+                <td>Futurepedia</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div
+          style="background: linear-gradient(135deg, #fff5e6 0%, #ffe8cc 100%); padding: 30px; border-radius: 20px; margin-top: 40px; border-left: 5px solid #daa569;"
+        >
+          <h3 style="color: #8b6f47; margin-bottom: 15px;">Порада</h3>
+          <p style="color: #495057; font-size: 1.05em; line-height: 1.7;">
+            Це базовий набір, який закриє 90% потреб експерта. Головне —
+            розуміти, коли використовувати який інструмент, а не намагатися
+            освоїти все одразу. Починайте з 2-3 інструментів та поступово
+            розширюйте свій арсенал.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style is:global>
+  main {
+    background: linear-gradient(135deg, #f5f0e8 0%, #e8dfd0 100%);
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  /* Header */
+  header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(
+      circle,
+      rgba(218, 165, 105, 0.1) 0%,
+      transparent 70%
+    );
+    border-radius: 50%;
+  }
+
+  header::after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(
+      circle,
+      rgba(184, 134, 87, 0.08) 0%,
+      transparent 70%
+    );
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: 3em;
+    font-weight: 700;
+    background: linear-gradient(135deg, #b8865b 0%, #daa569 50%, #8b6f47 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+    color: #6c757d;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 12px;
+  }
+
+  .author {
+    font-size: 0.95em;
+    color: #868e96;
+    position: relative;
+    z-index: 1;
+  }
+
+  .author a {
+    color: #b8865b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .author a:hover {
+    color: #8b6f47;
+  }
+
+  /* Navigation */
+  nav {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  .nav-btn {
+    padding: 24px 32px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border: 2px solid transparent;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #495057;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+
+  .nav-btn:hover {
+    background: linear-gradient(135deg, #daa569 0%, #b8865b 100%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(218, 165, 105, 0.3);
+  }
+
+  .nav-btn.active {
+    background: linear-gradient(135deg, #b8865b 0%, #8b6f47 100%);
+    color: white;
+    box-shadow: 0 8px 25px rgba(184, 134, 87, 0.4);
+  }
+
+  /* Section */
+  .section {
+    display: none;
+    animation: fadeIn 0.5s ease;
+  }
+
+  .section.active {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Tool Card */
+  .tool-card {
+    background: white;
+    border-radius: 24px;
+    padding: 35px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tool-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #daa569 0%, #b8865b 50%, #8b6f47 100%);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+  }
+
+  .tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(184, 134, 87, 0.15);
+  }
+
+  .tool-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .tool-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .tool-name {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .tool-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #daa569 0%, #b8865b 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2em;
+    box-shadow: 0 4px 15px rgba(218, 165, 105, 0.3);
+    font-weight: 700;
+  }
+
+  .tool-company {
+    font-size: 0.9em;
+    color: #868e96;
+    font-weight: 400;
+  }
+
+  .tool-price {
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe8cc 100%);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #8b6f47;
+    font-size: 0.95em;
+    border: 1px solid #daa569;
+  }
+
+  .tool-description {
+    color: #495057;
+    margin-bottom: 20px;
+    font-size: 1.05em;
+    line-height: 1.7;
+  }
+
+  .tool-section {
+    margin-bottom: 20px;
+  }
+
+  .tool-section h4 {
+    color: #b8865b;
+    margin-bottom: 12px;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .tool-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .tool-section li {
+    padding: 8px 0 8px 25px;
+    position: relative;
+    color: #495057;
+  }
+
+  .tool-section li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #daa569;
+    font-weight: bold;
+  }
+
+  .strengths li::before {
+    content: "✓";
+    color: #52c41a;
+  }
+
+  .weaknesses li::before {
+    content: "⚠";
+    color: #faad14;
+  }
+
+  .tool-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #b8865b 0%, #8b6f47 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(184, 134, 87, 0.3);
+    margin-top: 15px;
+  }
+
+  .tool-link:hover {
+    background: linear-gradient(135deg, #8b6f47 0%, #6d5637 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(139, 111, 71, 0.4);
+  }
+
+  /* Quick Reference Table */
+  .quick-ref {
+    background: white;
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+  }
+
+  .quick-ref h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+  }
+
+  thead {
+    background: linear-gradient(135deg, #b8865b 0%, #8b6f47 100%);
+    color: white;
+  }
+
+  th {
+    padding: 18px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.05em;
+  }
+
+  th:first-child {
+    border-top-left-radius: 12px;
+  }
+
+  th:last-child {
+    border-top-right-radius: 12px;
+  }
+
+  td {
+    padding: 16px 18px;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  tbody tr {
+    transition: all 0.3s ease;
+  }
+
+  tbody tr:hover {
+    background: linear-gradient(90deg, #fff5e6 0%, transparent 100%);
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+  }
+
+  tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+  }
+
+  /* Category Headers */
+  .category-header {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 25px 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid #daa569;
+  }
+
+  .category-header h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 8px;
+  }
+
+  .category-header p {
+    color: #6c757d;
+    font-size: 1.05em;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2em;
+    }
+
+    .tool-name {
+      font-size: 1.4em;
+    }
+
+    .tool-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav {
+      padding: 20px;
+      grid-template-columns: 1fr;
+    }
+
+    .nav-btn {
+      padding: 18px 24px;
+      font-size: 1em;
+    }
+
+    .tool-card {
+      padding: 25px;
+    }
+  }
+
+  /* Floating Elements */
+  .float-element {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    opacity: 0.03;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .float-1 {
+    top: 10%;
+    right: 5%;
+    background: radial-gradient(circle, #daa569 0%, transparent 70%);
+    animation: float 20s infinite ease-in-out;
+  }
+
+  .float-2 {
+    bottom: 10%;
+    left: 5%;
+    background: radial-gradient(circle, #b8865b 0%, transparent 70%);
+    animation: float 25s infinite ease-in-out reverse;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-30px) scale(1.1);
+    }
+  }
+</style>
+
+<script>
+  function showSection(sectionId: string) {
+    // Hide all sections
+    document.querySelectorAll(".section").forEach((section) => {
+      section.classList.remove("active");
+    });
+
+    // Remove active class from all buttons
+    document.querySelectorAll(".nav-btn").forEach((btn) => {
+      btn.classList.remove("active");
+    });
+
+    // Show selected section
+    const selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+      selectedSection.classList.add("active");
+    }
+
+    // Add active class to clicked button
+    const clickedButton = (event as any).target;
+    if (clickedButton) {
+      clickedButton.classList.add("active");
+    }
+
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // Make function globally accessible
+  (window as any).showSection = showSection;
+</script>
